@@ -28,7 +28,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x='type', data=df)
 plt.title("Content Type Distribution")
 plt.show()
-
 # --- 📊 Visualization 2: Top 10 Countries by Content ---
 top_countries = df['country'].value_counts().nlargest(10)
 top_countries.plot(kind='bar', color='skyblue')
